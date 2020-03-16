@@ -18,18 +18,20 @@ Therefore, x(g)=x(kg)/1000.
  */
 var number = 1;
 function uniquePositiveFactors(number1){
-	while(number<number1){
-		if (number%2===0){
-			console.log(number)
+	for (i=1;i<number1;i++){
+		if(number%i==0){
+			console.log(i);
 
 		}
-		number +=1;
-	}
-
-
-
-
+	} return i +=i;
 }
 
-let result = uniquePositiveFactors(36);
+
+
+
+
+
+
+
+let result = uniquePositiveFactors(12);
 console.log(result);
