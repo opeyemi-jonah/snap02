@@ -16,20 +16,23 @@ to convert kilogram(kg) to grams: kg/1000
 Therefore, x(g)=x(kg)/1000.
 
  */
-var number = 1;
 
 function uniquePositiveFactors(number1){
+
 	sum = 0;
+
 	for (i=1;i<number1;i++){
+
+		//Get factors
 		if(number1%i==0){
 			console.log(i);
-			sum += i;
+
+			sum = sum + i;
 
 		}
-
 
 	}
 	console.log(number1 + sum)
 }
 
-let result = uniquePositiveFactors(36);
+let result = uniquePositiveFactors(12);
